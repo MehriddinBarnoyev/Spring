@@ -1,0 +1,17 @@
+server:
+  port: 8085
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  datasource:
+    url:  jdbc:postgresql://localhost:5432/mohirdev_jwt
+    username: postgres
+    password: 5633
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database: postgresql
+    dialect: org.hibernate.dialect.PostgresSQLDialect
+    naming:
+      physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
